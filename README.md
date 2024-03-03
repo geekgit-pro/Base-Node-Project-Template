@@ -36,6 +36,48 @@ Let's dive into the `src` folder.
 
 
 - `utils` -> It contains helper methods, error classes, other single utilities etc.
+
+
+### Set up the project
+
+- Download this template from github and open it into your text editor.
+- In the root directory create a `.env` file and set up the following env variables
+        
+        ```
+        PORT=<PORT number of your choice>
+        
+        ```
+
+- Inside the `src/config` folder, create a file named as  `config.json` and write the following code :
+    ```
+    {
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+    ```
+- If you are setting up the development environment then write the name of your Database and password. In dialect mention the Database you plan to use.
+- If you are setting up the Test or Prod environment then mention your hosted Database URL.
+
+
                 
                     
 
