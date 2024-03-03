@@ -41,6 +41,12 @@ Let's dive into the `src` folder.
 ### Set up the project
 
 - Download this template from github and open it into your text editor.
+- Inside the folder path execute the following :
+    ```
+    npm install
+
+    ```
+
 - In the root directory create a `.env` file and set up the following env variables
         
         ```
@@ -74,8 +80,22 @@ Let's dive into the `src` folder.
   }
 }
     ```
+
+- To avoid the setting up of the verbose `config.json` , just go inside `src` folder and execute the following command:
+    ```
+    npx sequelize init
+
+    ```
+- Executing the above , will automatically create a `migrations` , `seeders` folder as well set up `config.json` inside the `config` folder.
+
 - If you are setting up the development environment then write the name of your Database and password. In dialect mention the Database you plan to use.
 - If you are setting up the Test or Prod environment then mention your hosted Database URL.
+
+- To run the server execute
+    ```
+    npm run dev
+
+    ```
 
 
                 
