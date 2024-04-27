@@ -8,6 +8,8 @@ const airplaneRoutes = require('./airplane-routes');
 
 router.get('/info', InfoController.info);
 
+console.log("inside v1 routes");
+
 router.use('/airplanes', airplaneRoutes);
 
 
